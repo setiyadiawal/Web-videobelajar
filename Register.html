@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="register.css">
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+        <!-- Font Google DM Sans -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+        <!-- Font Google Poppins -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+        <!-- Font Google Lato -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    
+        <!-- Font Awesome (Untuk Logo Sosmed) -->
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer" />
+
+        <!-- Google Font Roboto -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<header>
+    <!-- Navigation Bar Start -->
+        <nav class="navbar-container">
+            <img src="Assets/Logo.png" alt="Logo.png" class="img-container">
+        </nav>
+        <!-- Navigation Bar End -->
+</header>
+
+<main>
+    <!-- Form Start -->
+    <form class="form-container">
+        <div class="form-header">
+            <h3>Pendaftaran Akun</h3>
+            <p>Yuk, daftarkan akunmu sekarang juga!</p>
+        </div>
+
+        <div class="form-main">
+            <div class="formulir">
+                <div class="form-input">
+                    <div class="form-nama">
+                        <label for="nama" class="text-form">Nama Lengkap</label>
+                        <input type="text" name="nama" class="kotak-nama">
+                    </div>
+                    <div class="form-nohp">
+                        <div class="kode-box">
+                            <label for="nohp" class="text-form">No. HP</label>
+                            <div class="kode">
+                                <div class="negara">
+                                    <img src="Assets/id.png" class="bendera">
+                                </div>
+                                <select name="kode" class="no-negara">
+                                    <option value="+62">+62</option>
+                                    <option value="+81">+81</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="number">
+                            <label for="nohp"></label>
+                            <input type="number" name="nohp" class="kotak-nohp">
+                        </div>
+                    </div>
+                    <div class="form-email">
+                        <label for="email" class="text-form">E-mail</label>
+                        <input type="email" name="email" class="kotak-email">
+                    </div>
+                    <div class="form-password">
+                        <label for="kata-sandi" class="text-form">Kata Sandi</label>
+                        <span class="pass"><input type="password" name="password" class="kotak-password"></span>
+                        <i data-feather="eye-off" class="eye-off"></i>
+                    </div>
+                    <div class="form-konfirmasi">
+                        <label for="kata-sandi" class="text-form"> Konfirmasi Kata Sandi</label>
+                        <span class="pass-konf"><input type="password" name="password" class="kotak-password"></span>
+                        <i data-feather="eye-off" class="eye-offf"></i>
+                    </div>
+                    <div class="forgot-cont">
+                    <p class="forgot"><a href="#">Lupa Password?</a></p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="masuk">Daftar</button>
+                    <button type="submit" class="daftar">Masuk</button>
+                </div>
+
+            </div>
+
+            <div class="form-line">
+              <hr> <p>atau</p>
+            </div>
+
+            <div class="google-btn">
+                <img src="Assets/google.png">
+                <button type="button" class="login-google">Daftar dengan Google</button>
+
+            </div>
+        </div>
+    </form>
+    <!-- Form End -->
+</main>
+
+<script>
+    feather.replace();
+  </script>
+</body>
+</html>
